@@ -42,10 +42,6 @@
     { "source": "/360-degree-booth", "destination": "/services/photobooth/360-booth", "permanent": true },
     { "source": "/silent-headsets-party", "destination": "/services/silent-headsets/silent-disco", "permanent": true }
   ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
   "headers": [
     {
       "source": "/assets/(.*)",
