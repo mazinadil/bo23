@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://box-sparkle-site.vercel.app/</loc>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/hero-poster.webp</image:loc>
+      <image:title>Box Entertainment Dubai - Premium Event Entertainment</image:title>
+      <image:caption>Professional entertainment services for weddings, corporate events, and parties in Dubai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/assets/box-logo.webp</image:loc>
+      <image:title>Box Entertainment Dubai Logo</image:title>
+      <image:caption>Dubai's premier entertainment and events company logo</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://box-sparkle-site.vercel.app/services</loc>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/dj-bg.webp</image:loc>
+      <image:title>Professional DJ Services in Dubai</image:title>
+      <image:caption>Expert DJ entertainment for weddings, corporate events, and parties in Dubai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/magicians-bg.webp</image:loc>
+      <image:title>Professional Magicians for Events in Dubai</image:title>
+      <image:caption>World-class magicians and illusionists for corporate events and parties in Dubai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/dancers-bg.webp</image:loc>
+      <image:title>Professional Dancers for Events in Dubai</image:title>
+      <image:caption>Talented dancers and choreographed performances for events in Dubai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/singers-bg.webp</image:loc>
+      <image:title>Live Singers and Bands in Dubai</image:title>
+      <image:caption>Professional singers and live bands for weddings and events in Dubai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/photobooth-bg.webp</image:loc>
+      <image:title>Photo Booth Rentals in Dubai</image:title>
+      <image:caption>Modern photo booth rentals with instant prints for events in Dubai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/sound-lighting-bg.webp</image:loc>
+      <image:title>Professional Sound and Lighting Equipment Dubai</image:title>
+      <image:caption>High-quality sound systems and stage lighting for events in Dubai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/dance-floors-bg.webp</image:loc>
+      <image:title>Dance Floor Rentals in Dubai</image:title>
+      <image:caption>Premium dance floor rentals for weddings and events in Dubai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/led-dancefloor-bg.webp</image:loc>
+      <image:title>LED Dance Floor Rentals Dubai</image:title>
+      <image:caption>Stunning LED illuminated dance floors for luxury events in Dubai</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://box-sparkle-site.vercel.app/services/outdoor-cinema</loc>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/outdoor-cinema-bg.webp</image:loc>
+      <image:title>Outdoor Cinema Setup in Dubai</image:title>
+      <image:caption>Professional outdoor cinema and movie screening equipment for events in Dubai</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://box-sparkle-site.vercel.app/services/karaoke</loc>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/karaoke-bg.webp</image:loc>
+      <image:title>Karaoke System Rentals Dubai</image:title>
+      <image:caption>Professional karaoke equipment and systems for parties and events in Dubai</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://box-sparkle-site.vercel.app/services/silent-headsets</loc>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/silent-headsets-bg.webp</image:loc>
+      <image:title>Silent Disco Headset Rentals Dubai</image:title>
+      <image:caption>Wireless silent disco headphones for unique party experiences in Dubai</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://box-sparkle-site.vercel.app/services/dance-floors</loc>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/dance-floors-bg.webp</image:loc>
+      <image:title>Premium Dance Floor Rentals Dubai</image:title>
+      <image:caption>High-quality dance floor installations for weddings and corporate events in Dubai</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://box-sparkle-site.vercel.app/services/led-letters</loc>
+    <image:image>
+      <image:loc>https://box-sparkle-site.vercel.app/images/services/led-letters-bg.webp</image:loc>
+      <image:title>LED Letter Rentals Dubai</image:title>
+      <image:caption>Giant illuminated LED letters and numbers for event decoration in Dubai</image:caption>
+    </image:image>
+  </url>
+</urlset>

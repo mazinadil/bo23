@@ -1,0 +1,131 @@
+{
+  "redirects": [
+    {
+      "source": "/events/weddings",
+      "destination": "/events/wedding-package",
+      "permanent": true
+    },
+    { "source": "/dj", "destination": "/services/entertainment/djs", "permanent": true },
+    { "source": "/outdoor-cinema", "destination": "/services/outdoor-cinema", "permanent": true },
+    { "source": "/magic-phil", "destination": "/services/entertainment/magicians", "permanent": true },
+    { "source": "/corporate-headsets", "destination": "/services/silent-headsets/corporate-headsets", "permanent": true },
+    { "source": "/mc-darryl-rees", "destination": "/", "permanent": true },
+    { "source": "/wedding-package", "destination": "/events/wedding-package", "permanent": true },
+    { "source": "/sound-lighting-hire", "destination": "/services/sound-lighting", "permanent": true },
+    { "source": "/silent-disco-party-dubai", "destination": "/services/silent-headsets/silent-disco", "permanent": true },
+    { "source": "/saxophonists", "destination": "/services/entertainment/saxophonists", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/emcees", "destination": "/services/entertainment/emcees", "permanent": true },
+    { "source": "/bands", "destination": "/services/entertainment/bands", "permanent": true },
+    { "source": "/light-up-led-letters", "destination": "/services/led-letters", "permanent": true },
+    { "source": "/parties", "destination": "/events/parties", "permanent": true },
+    { "source": "/mirror-photo-booth", "destination": "/services/photobooth/mirror-booth", "permanent": true },
+    { "source": "/silent-yoga-dubai", "destination": "/services/silent-headsets/silent-yoga", "permanent": true },
+    { "source": "/karaoke", "destination": "/services/karaoke", "permanent": true },
+    { "source": "/festoon-fairy-lights", "destination": "/services/sound-lighting/festoon-lights", "permanent": true },
+    { "source": "/about-us", "destination": "/about", "permanent": true },
+    { "source": "/entertainment", "destination": "/services/entertainment", "permanent": true },
+    { "source": "/silent-headsets-hire", "destination": "/services/silent-headsets", "permanent": true },
+    { "source": "/dancers", "destination": "/services/entertainment/dancers", "permanent": true },
+    { "source": "/privacy-policy", "destination": "/privacy", "permanent": true },
+    { "source": "/proposals", "destination": "/events/proposals", "permanent": true },
+    { "source": "/comedians-2", "destination": "/services/entertainment/comedians", "permanent": true },
+    { "source": "/mirror-photo-booth-backdrop", "destination": "/services/photobooth/mirror-booth-backdrop", "permanent": true },
+    { "source": "/sitemap", "destination": "/sitemap.xml", "permanent": true },
+    { "source": "/singers", "destination": "/services/entertainment/singers", "permanent": true },
+    { "source": "/corporate", "destination": "/events/corporate", "permanent": true },
+    { "source": "/dance-floors", "destination": "/services/dance-floors", "permanent": true },
+    { "source": "/original-photo-booth", "destination": "/services/photobooth/original-booth", "permanent": true },
+    { "source": "/magicians", "destination": "/services/entertainment/magicians", "permanent": true },
+    { "source": "/photo-booth-rental-dubai", "destination": "/services/photobooth", "permanent": true },
+    { "source": "/terms-condition", "destination": "/terms", "permanent": true },
+    { "source": "/360-degree-booth", "destination": "/services/photobooth/360-booth", "permanent": true },
+    { "source": "/silent-headsets-party", "destination": "/services/silent-headsets/silent-disco", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/videos/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).woff2",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).woff",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/:category/:slug",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/((?!api|_next|assets|images|videos|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

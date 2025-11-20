@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors - Box Entertainment */
+    --background: 0 0% 5%;
+    --foreground: 35 45% 88%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 35 45% 88%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 35 45% 88%;
+
+    --primary: 30 40% 65%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 45 50% 85%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 40 45% 90%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 30 40% 65%;
+
+    --magenta: 340 57% 59%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-dark: linear-gradient(135deg, hsl(0, 0%, 5%) 0%, hsl(30, 25%, 12%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 3%) 0%, hsl(30, 35%, 20%) 50%, hsl(45, 40%, 30%) 100%);
+    --gradient-neon: linear-gradient(135deg, hsl(30, 40%, 65%) 0%, hsl(45, 50%, 85%) 100%);
+    
+    /* Glows */
+    --glow-primary: 0 0 20px hsl(30 40% 65% / 0.5);
+    --glow-secondary: 0 0 20px hsl(45 50% 85% / 0.5);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    background: linear-gradient(135deg, hsl(0, 0%, 5%) 0%, hsl(30, 25%, 12%) 100%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading uppercase;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer utilities {
+  .wp-article {
+    font-family: 'Lato', sans-serif;
+    color: hsl(var(--foreground));
+    line-height: 1.8;
+    font-size: 1.0625rem;
+    letter-spacing: 0;
+  }
+
+  .wp-content {
+    @apply space-y-6;
+  }
+
+  .wp-content p {
+    margin: 0 0 1.5rem 0;
+    color: hsl(var(--foreground));
+    line-height: 1.8;
+  }
+
+  .wp-content h1,
+  .wp-content h2,
+  .wp-content h3,
+  .wp-content h4,
+  .wp-content h5,
+  .wp-content h6 {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    color: hsl(var(--foreground));
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .wp-content h1 { font-size: clamp(2rem, 3vw, 2.75rem); }
+  .wp-content h2 { font-size: clamp(1.75rem, 2.5vw, 2.25rem); }
+  .wp-content h3 { font-size: clamp(1.5rem, 2vw, 1.875rem); }
+  .wp-content h4 { font-size: clamp(1.25rem, 1.8vw, 1.5rem); }
+  .wp-content h5 { font-size: clamp(1.125rem, 1.5vw, 1.35rem); }
+  .wp-content h6 { font-size: clamp(1rem, 1.25vw, 1.2rem); }
+
+  .wp-content strong {
+    font-weight: 700;
+  }
+
+  .wp-content em {
+    font-style: italic;
+  }
+
+  .wp-content ul,
+  .wp-content ol {
+    margin: 0 0 1.75rem 1.5rem;
+    padding: 0;
+    line-height: 1.8;
+  }
+
+  .wp-content ul li,
+  .wp-content ol li {
+    margin-bottom: 0.75rem;
+  }
+
+  .wp-content ul li::marker {
+    color: hsl(var(--primary));
+  }
+
+  .wp-content ol li::marker {
+    font-weight: 700;
+  }
+
+  .wp-content blockquote {
+    border-left: 4px solid hsl(var(--primary));
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: hsl(var(--foreground));
+    background: hsl(var(--background) / 0.4);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .wp-content figure {
+    margin: 2.5rem 0;
+  }
+
+  .wp-content figcaption {
+    text-align: center;
+    font-size: 0.95rem;
+    color: hsl(var(--muted-foreground));
+    margin-top: 0.75rem;
+  }
+
+  .wp-content a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    transition: color 0.3s ease;
+  }
+
+  .wp-content a:hover {
+    color: hsl(var(--primary) / 0.8);
+  }
+
+  .wp-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+  }
+
+  .wp-content table th,
+  .wp-content table td {
+    border: 1px solid hsl(var(--border));
+    padding: 0.75rem 1rem;
+  }
+
+  .wp-content table th {
+    background: hsl(var(--muted) / 0.3);
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .wp-content img,
+  .wp-content video,
+  .wp-content iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    margin: 2.5rem 0;
+  }
+
+  .wp-lead-image {
+    margin: 0 0 2.5rem 0;
+  }
+
+  @media (min-width: 1024px) {
+    .wp-article {
+      font-size: 1.125rem;
+    }
+
+    .wp-content {
+      margin-top: 2rem;
+    }
+  }
+
+  .text-glow {
+    text-shadow: var(--glow-primary);
+  }
+  
+  .text-glow-secondary {
+    text-shadow: var(--glow-secondary);
+  }
+  
+  .box-glow {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .box-glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+  
+  .gradient-text {
+    background: var(--gradient-neon);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+  
+  .hover-glow {
+    transition: var(--transition-glow);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--glow-primary);
+  }
+
+  /* Performance optimizations */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .will-change-opacity {
+    will-change: opacity;
+  }
+
+  /* Content visibility for off-screen sections */
+  .content-auto {
+    content-visibility: auto;
+  }
+
+  /* Hide scrollbar while maintaining scroll functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+}
