@@ -6,7 +6,7 @@ import { writeBlogSitemap } from './scripts/generate-blog-sitemap.js'
 import { writeSitemapIndex } from './scripts/generate-sitemap-index.js'
 
 // WordPress API configuration
-const WP_API_BASE = process.env.WP_API_BASE || 'https://boxentertainment.ae/wp-json'
+const WP_API_BASE = process.env.WP_API_BASE || 'https://blog.boxentertainment.ae/wp-json'
 const BLOG_LIMIT = Number(process.env.VITE_PRERENDER_BLOG_LIMIT || 100)
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
